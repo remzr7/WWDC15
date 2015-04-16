@@ -13,6 +13,8 @@
 		2D93F9871ADD792000DF695B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D93F9861ADD792000DF695B /* Images.xcassets */; };
 		2D93F98A1ADD792000DF695B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D93F9881ADD792000DF695B /* LaunchScreen.xib */; };
 		2D93F9961ADD792000DF695B /* WWDC15Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D93F9951ADD792000DF695B /* WWDC15Tests.swift */; };
+		2D93F9A21ADDF20200DF695B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D93F9A11ADDF20200DF695B /* HomeViewController.swift */; };
+		2D93F9A91ADE7F6500DF695B /* GlowLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D93F9A81ADE7F6500DF695B /* GlowLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		2D93F98F1ADD792000DF695B /* WWDC15Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDC15Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D93F9941ADD792000DF695B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D93F9951ADD792000DF695B /* WWDC15Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC15Tests.swift; sourceTree = "<group>"; };
+		2D93F9A11ADDF20200DF695B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2D93F9A81ADE7F6500DF695B /* GlowLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,9 @@
 		2D93F97C1ADD792000DF695B /* WWDC15 */ = {
 			isa = PBXGroup;
 			children = (
-				2D93F97F1ADD792000DF695B /* AppDelegate.swift */,
-				2D93F9811ADD792000DF695B /* ViewController.swift */,
-				2D93F9831ADD792000DF695B /* Main.storyboard */,
-				2D93F9861ADD792000DF695B /* Images.xcassets */,
-				2D93F9881ADD792000DF695B /* LaunchScreen.xib */,
+				2D93F9A31ADDF21600DF695B /* ViewControllers */,
+				2D93F9A41ADDF22C00DF695B /* Assets */,
+				2D93F9A51ADDF23400DF695B /* Interfaces */,
 				2D93F97D1ADD792000DF695B /* Supporting Files */,
 			);
 			path = WWDC15;
@@ -110,6 +112,34 @@
 				2D93F9941ADD792000DF695B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D93F9A31ADDF21600DF695B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D93F97F1ADD792000DF695B /* AppDelegate.swift */,
+				2D93F9A11ADDF20200DF695B /* HomeViewController.swift */,
+				2D93F9811ADD792000DF695B /* ViewController.swift */,
+				2D93F9A81ADE7F6500DF695B /* GlowLayer.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2D93F9A41ADDF22C00DF695B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2D93F9861ADD792000DF695B /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		2D93F9A51ADDF23400DF695B /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				2D93F9881ADD792000DF695B /* LaunchScreen.xib */,
+				2D93F9831ADD792000DF695B /* Main.storyboard */,
+			);
+			name = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D93F9A91ADE7F6500DF695B /* GlowLayer.swift in Sources */,
 				2D93F9821ADD792000DF695B /* ViewController.swift in Sources */,
 				2D93F9801ADD792000DF695B /* AppDelegate.swift in Sources */,
+				2D93F9A21ADDF20200DF695B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +441,7 @@
 				2D93F99B1ADD792000DF695B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D93F99C1ADD792000DF695B /* Build configuration list for PBXNativeTarget "WWDC15Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +450,7 @@
 				2D93F99E1ADD792000DF695B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
