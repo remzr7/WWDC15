@@ -22,6 +22,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do view setup here.
         
+        
+        
         wwdcAnimationLabel.alpha = 0.0;
         
         let glow:GlowLayer = GlowLayer(pulseColor: UIColor.blackColor())
