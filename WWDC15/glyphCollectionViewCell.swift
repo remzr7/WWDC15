@@ -13,14 +13,28 @@ class glyphCollectionViewCell: UICollectionViewCell
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var descLabel: UILabel!
 
+    @IBOutlet var shadowImage: UIImageView!
     override init(frame: CGRect)
     {
         super.init(frame: frame)
+        
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
     }
 
     required init(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
-        backgroundColor = UIColor.redColor()
+        
+
     }
+    
+    override func layoutSubviews() {
+        backgroundColor = UIColor.redColor()
+//        shadowImage.frame = frame;
+    }
+    
+    
 }

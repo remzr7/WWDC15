@@ -42,6 +42,10 @@ class mainBackgroundController: UIViewController, UICollectionViewDelegate, UICo
 
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+    }
     
     func setupCollectionView()
     {
@@ -57,6 +61,8 @@ class mainBackgroundController: UIViewController, UICollectionViewDelegate, UICo
     {
         
         var cell:glyphCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("glyph", forIndexPath: indexPath) as! glyphCollectionViewCell
+        
+//        cell.shadowImage.frame = cell.frame
         
         cell.backgroundColor = UIColor.blueColor()
         
@@ -74,6 +80,10 @@ class mainBackgroundController: UIViewController, UICollectionViewDelegate, UICo
     func handleGesture(sender:AnyObject)
     {
         
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
 

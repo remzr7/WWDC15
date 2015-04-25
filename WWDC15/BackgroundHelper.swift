@@ -46,7 +46,7 @@ class BackgroundHelper: NSObject {
     
     //MARK: - Target Actions
 
-    func playedItemDidEnd(#notification: NSNotification)
+    func playerItemDidEnd(notification: NSNotification)
     {
         let player = notification.object as! AVPlayerItem
         player.seekToTime(kCMTimeZero)

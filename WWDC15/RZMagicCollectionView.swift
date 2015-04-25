@@ -14,12 +14,13 @@ class RZMagicCollectionView: UICollectionView {
         super.init(coder: aDecoder)
         
         var layout = RZMagicLayout(coder: aDecoder)
-        layout.minimumLineSpacing = 15
-        layout.minimumInteritemSpacing = 15
+        layout.minimumLineSpacing = 50
+        layout.minimumInteritemSpacing = 50
+        layout.sectionInset = UIEdgeInsets(top: 30, left: 20, bottom: 30, right: 20)
+
         layout.scrollDirection = UICollectionViewScrollDirection.Vertical
         
         self.backgroundColor = UIColor.clearColor()
-        self.registerClass(glyphCollectionViewCell.self, forCellWithReuseIdentifier: "glyph")
 
         
     }

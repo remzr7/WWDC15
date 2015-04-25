@@ -50,15 +50,10 @@ class RZMagicLayout: UICollectionViewFlowLayout
             return !currentlyVisible
         }))
         
-        (noLongerVisibleBehaviours as NSArray).enumerateObjectsUsingBlock ({ obj, index, stop in
-            
-            var x = obj as! UIAttachmentBehavior
-            self.dynamicAnimator.removeBehavior(x)
-            
-            
-            self.visibleIndexPathsSet.removeObject(NSIndexPath(index: index))
-            self.visibleHeaderAndFooter.removeObject(NSIndexPath(index: index))
-        })
+        for (index, obj) in enumerate(noLongerVisibleBehaviours) {
+            self.dynamicAnimator.removeBehavior(obj as! UIDynamicBehavior)
+            self.visibleIndexPathsSet.removeObject((obj as! UIAttachmentBehavior).items.first!.indexPath)
+        }
         
         var newlyVisibleItems = itemsInVisibleRectArray.filteredArrayUsingPredicate(NSPredicate(block: {item, bindings in
             var currentlyVisible: Bool = self.visibleIndexPathsSet.member(item.indexPath) != nil
@@ -74,19 +69,17 @@ class RZMagicLayout: UICollectionViewFlowLayout
             springBehaviour.damping = CGFloat(kDamping)
             springBehaviour.frequency = CGFloat(kFrequence)
             
-            // If our touchLocation is not (0,0), we'll need to adjust our item's center "in flight"
             if (!CGPointEqualToPoint(CGPointZero, touchLocation)) {
                 var yDistanceFromTouch = fabsf(Float(touchLocation.y - springBehaviour.anchorPoint.y))
-                var xDistanceFromTouch = fabsf(Float(touchLocation.x - springBehaviour.anchorPoint.x))
-                var scrollResistance = (yDistanceFromTouch + xDistanceFromTouch) / Float(kResistence)
+                var scrollResistance = (yDistanceFromTouch) / Float(kResistence)
                 
                 var item = springBehaviour.items.first as! UICollectionViewLayoutAttributes
                 var center = item.center
                 
                 if self.latestDelta < 0 {
-                    center.x += max(self.latestDelta, self.latestDelta * CGFloat(scrollResistance))
+                    center.y += max(self.latestDelta, self.latestDelta * CGFloat(scrollResistance))
                 } else {
-                    center.x += min(self.latestDelta, self.latestDelta * CGFloat(scrollResistance))
+                    center.y += min(self.latestDelta, self.latestDelta * CGFloat(scrollResistance))
                 }
                 
                 item.center = center
@@ -124,10 +117,9 @@ class RZMagicLayout: UICollectionViewFlowLayout
         latestDelta = delta
         
         var touchLocation = collectionView!.panGestureRecognizer.locationInView(collectionView)
-        
-        (dynamicAnimator.behaviors as NSArray) .enumerateObjectsUsingBlock { (springBehaviour, idx, stop) -> Void in
+        for (index, springBehaviour) in enumerate(self.dynamicAnimator.behaviors)
+        {
             var x = springBehaviour as! UIAttachmentBehavior
-            
             var distanceFromTouch = fabsf(Float(touchLocation.y - x.anchorPoint.y))
             
             var scrollResistance:Float
@@ -140,10 +132,22 @@ class RZMagicLayout: UICollectionViewFlowLayout
                 scrollResistance = distanceFromTouch/Float(kScrollResistanceFactorDefault)
             }
             
-            var item:UICollectionViewLayoutAttributes = (x.items.first as! UICollectionViewLayoutAttributes)
+            var item:UICollectionViewLayoutAttributes = x.items.first as! UICollectionViewLayoutAttributes
             var center = item.center
+
+            if (delta < 0)
+            {
+                center.y += CGFloat(max(Float(delta), Float(delta)*scrollResistance))
+            }
+            else
+            {
+                center.y += CGFloat(min(Float(delta), Float(delta)*scrollResistance))
+            }
+            
+            item.center = center
             
             self.dynamicAnimator .updateItemUsingCurrentState(item)
+
         }
         
         return false
