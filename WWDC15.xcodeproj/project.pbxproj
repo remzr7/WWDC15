@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2592DDB436C41E59D1184728 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 109B2623C080AE929F009F83 /* libPods.a */; };
 		2D35B6311AE0B31D00E3E2EA /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35B6131AE0B31D00E3E2EA /* AsyncButton.swift */; };
 		2D35B6321AE0B31D00E3E2EA /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35B6141AE0B31D00E3E2EA /* AsyncImageView.swift */; };
 		2D35B6331AE0B31D00E3E2EA /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35B6151AE0B31D00E3E2EA /* AutoTextView.swift */; };
@@ -37,6 +38,7 @@
 		2D35B64C1AE0B31D00E3E2EA /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35B62F1AE0B31D00E3E2EA /* TransitionZoom.swift */; };
 		2D35B64D1AE0B31D00E3E2EA /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35B6301AE0B31D00E3E2EA /* UnwindSegue.swift */; };
 		2D35B6501AE0B66600E3E2EA /* DynamicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35B64F1AE0B66600E3E2EA /* DynamicView.swift */; };
+		2D6801DF1AE5347F00CE86A0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6801DE1AE5347F00CE86A0 /* AVFoundation.framework */; };
 		2D93F9801ADD792000DF695B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D93F97F1ADD792000DF695B /* AppDelegate.swift */; };
 		2D93F9821ADD792000DF695B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D93F9811ADD792000DF695B /* ViewController.swift */; };
 		2D93F9851ADD792000DF695B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D93F9831ADD792000DF695B /* Main.storyboard */; };
@@ -45,6 +47,12 @@
 		2D93F9961ADD792000DF695B /* WWDC15Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D93F9951ADD792000DF695B /* WWDC15Tests.swift */; };
 		2D93F9A21ADDF20200DF695B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D93F9A11ADDF20200DF695B /* HomeViewController.swift */; };
 		2D93F9A91ADE7F6500DF695B /* GlowLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D93F9A81ADE7F6500DF695B /* GlowLayer.swift */; };
+		2D9E68071AE3FFFA0047B34A /* mainBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9E68061AE3FFFA0047B34A /* mainBackgroundViewController.swift */; };
+		2DDFC2521AE6409300CB3ACA /* BackgroundHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFC2511AE6409300CB3ACA /* BackgroundHelper.swift */; };
+		2DDFC2541AE649DD00CB3ACA /* glyph1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFC2531AE649DD00CB3ACA /* glyph1.json */; };
+		2DDFC2571AE6658E00CB3ACA /* glyphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFC2561AE6658E00CB3ACA /* glyphCollectionViewCell.swift */; };
+		2DE78D0F1AE50069005C8AE3 /* bgEffect.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2DE78D0E1AE50069005C8AE3 /* bgEffect.mp4 */; };
+		2DEEB6C71AE8866E00F5FFA9 /* RZMagicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEB6C61AE8866E00F5FFA9 /* RZMagicLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		109B2623C080AE929F009F83 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D35B6131AE0B31D00E3E2EA /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		2D35B6141AE0B31D00E3E2EA /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		2D35B6151AE0B31D00E3E2EA /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -89,6 +98,7 @@
 		2D35B62F1AE0B31D00E3E2EA /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		2D35B6301AE0B31D00E3E2EA /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		2D35B64F1AE0B66600E3E2EA /* DynamicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicView.swift; sourceTree = "<group>"; };
+		2D6801DE1AE5347F00CE86A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2D93F97A1ADD792000DF695B /* WWDC15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D93F97E1ADD792000DF695B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D93F97F1ADD792000DF695B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +111,15 @@
 		2D93F9951ADD792000DF695B /* WWDC15Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC15Tests.swift; sourceTree = "<group>"; };
 		2D93F9A11ADDF20200DF695B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2D93F9A81ADE7F6500DF695B /* GlowLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowLayer.swift; sourceTree = "<group>"; };
+		2D9E68061AE3FFFA0047B34A /* mainBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainBackgroundViewController.swift; sourceTree = "<group>"; };
+		2DDFC2511AE6409300CB3ACA /* BackgroundHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundHelper.swift; sourceTree = "<group>"; };
+		2DDFC2531AE649DD00CB3ACA /* glyph1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = glyph1.json; sourceTree = "<group>"; };
+		2DDFC2561AE6658E00CB3ACA /* glyphCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = glyphCollectionViewCell.swift; sourceTree = "<group>"; };
+		2DE78D0E1AE50069005C8AE3 /* bgEffect.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bgEffect.mp4; sourceTree = "<group>"; };
+		2DEEB6C61AE8866E00F5FFA9 /* RZMagicLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZMagicLayout.swift; sourceTree = "<group>"; };
+		2DEEB6CA1AE8EE8000F5FFA9 /* Experimental.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Experimental.playground; sourceTree = "<group>"; };
+		3D1B5216654E1305873CF8A7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3EDCA2B7C01E0B43DB2BC6D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6801DF1AE5347F00CE86A0 /* AVFoundation.framework in Frameworks */,
+				2592DDB436C41E59D1184728 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +194,8 @@
 				2D93F97C1ADD792000DF695B /* WWDC15 */,
 				2D93F9921ADD792000DF695B /* WWDC15Tests */,
 				2D93F97B1ADD792000DF695B /* Products */,
+				FA30FDF4649F136CE290B43B /* Pods */,
+				D7BD37747882A5FF9D3D97EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,7 +211,10 @@
 		2D93F97C1ADD792000DF695B /* WWDC15 */ = {
 			isa = PBXGroup;
 			children = (
+				2DEEB6CA1AE8EE8000F5FFA9 /* Experimental.playground */,
 				2D93F9A31ADDF21600DF695B /* ViewControllers */,
+				2DDFC2581AE6674200CB3ACA /* Models */,
+				2DDFC2551AE649E400CB3ACA /* JSON */,
 				2D93F9A41ADDF22C00DF695B /* Assets */,
 				2D93F9A51ADDF23400DF695B /* Interfaces */,
 				2D35B64E1AE0B32F00E3E2EA /* Libs */,
@@ -230,6 +256,10 @@
 				2D93F9811ADD792000DF695B /* ViewController.swift */,
 				2D93F9A81ADE7F6500DF695B /* GlowLayer.swift */,
 				2D35B64F1AE0B66600E3E2EA /* DynamicView.swift */,
+				2D9E68061AE3FFFA0047B34A /* mainBackgroundViewController.swift */,
+				2DDFC2511AE6409300CB3ACA /* BackgroundHelper.swift */,
+				2DDFC2561AE6658E00CB3ACA /* glyphCollectionViewCell.swift */,
+				2DEEB6C51AE8864E00F5FFA9 /* Layouts */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +267,7 @@
 		2D93F9A41ADDF22C00DF695B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2DE78D0E1AE50069005C8AE3 /* bgEffect.mp4 */,
 				2D93F9861ADD792000DF695B /* Images.xcassets */,
 			);
 			name = Assets;
@@ -251,6 +282,47 @@
 			name = Interfaces;
 			sourceTree = "<group>";
 		};
+		2DDFC2551AE649E400CB3ACA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2DDFC2531AE649DD00CB3ACA /* glyph1.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		2DDFC2581AE6674200CB3ACA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2DEEB6C51AE8864E00F5FFA9 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				2DEEB6C61AE8866E00F5FFA9 /* RZMagicLayout.swift */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		D7BD37747882A5FF9D3D97EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D6801DE1AE5347F00CE86A0 /* AVFoundation.framework */,
+				109B2623C080AE929F009F83 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA30FDF4649F136CE290B43B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EDCA2B7C01E0B43DB2BC6D2 /* Pods.debug.xcconfig */,
+				3D1B5216654E1305873CF8A7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,9 +330,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D93F9991ADD792000DF695B /* Build configuration list for PBXNativeTarget "WWDC15" */;
 			buildPhases = (
+				9C7D55512AD5AE434745A591 /* Check Pods Manifest.lock */,
 				2D93F9761ADD792000DF695B /* Sources */,
 				2D93F9771ADD792000DF695B /* Frameworks */,
 				2D93F9781ADD792000DF695B /* Resources */,
+				03E390D99D1BAA232D8F4B41 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -333,6 +407,8 @@
 			files = (
 				2D35B63D1AE0B31D00E3E2EA /* Info.plist in Resources */,
 				2D93F9851ADD792000DF695B /* Main.storyboard in Resources */,
+				2DDFC2541AE649DD00CB3ACA /* glyph1.json in Resources */,
+				2DE78D0F1AE50069005C8AE3 /* bgEffect.mp4 in Resources */,
 				2D93F98A1ADD792000DF695B /* LaunchScreen.xib in Resources */,
 				2D93F9871ADD792000DF695B /* Images.xcassets in Resources */,
 				2D35B6401AE0B31D00E3E2EA /* LoadingView.xib in Resources */,
@@ -348,6 +424,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03E390D99D1BAA232D8F4B41 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C7D55512AD5AE434745A591 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2D93F9761ADD792000DF695B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -362,16 +471,19 @@
 				2D35B64D1AE0B31D00E3E2EA /* UnwindSegue.swift in Sources */,
 				2D35B6471AE0B31D00E3E2EA /* SpringLabel.swift in Sources */,
 				2D93F9821ADD792000DF695B /* ViewController.swift in Sources */,
+				2D9E68071AE3FFFA0047B34A /* mainBackgroundViewController.swift in Sources */,
 				2D35B6331AE0B31D00E3E2EA /* AutoTextView.swift in Sources */,
 				2D35B6441AE0B31D00E3E2EA /* SpringAnimation.swift in Sources */,
 				2D35B63C1AE0B31D00E3E2EA /* ImageLoader.swift in Sources */,
 				2D35B6501AE0B66600E3E2EA /* DynamicView.swift in Sources */,
 				2D35B6481AE0B31D00E3E2EA /* SpringTextField.swift in Sources */,
+				2DDFC2521AE6409300CB3ACA /* BackgroundHelper.swift in Sources */,
 				2D93F9801ADD792000DF695B /* AppDelegate.swift in Sources */,
 				2D35B6361AE0B31D00E3E2EA /* DesignableImageView.swift in Sources */,
 				2D35B6421AE0B31D00E3E2EA /* SoundPlayer.swift in Sources */,
 				2D35B6411AE0B31D00E3E2EA /* Misc.swift in Sources */,
 				2D35B63B1AE0B31D00E3E2EA /* DesignableView.swift in Sources */,
+				2DEEB6C71AE8866E00F5FFA9 /* RZMagicLayout.swift in Sources */,
 				2D35B64A1AE0B31D00E3E2EA /* SpringView.swift in Sources */,
 				2D93F9A21ADDF20200DF695B /* HomeViewController.swift in Sources */,
 				2D35B6321AE0B31D00E3E2EA /* AsyncImageView.swift in Sources */,
@@ -380,6 +492,7 @@
 				2D35B6461AE0B31D00E3E2EA /* SpringImageView.swift in Sources */,
 				2D35B6451AE0B31D00E3E2EA /* SpringButton.swift in Sources */,
 				2D35B6381AE0B31D00E3E2EA /* DesignableTabBarController.swift in Sources */,
+				2DDFC2571AE6658E00CB3ACA /* glyphCollectionViewCell.swift in Sources */,
 				2D35B6371AE0B31D00E3E2EA /* DesignableLabel.swift in Sources */,
 				2D35B64B1AE0B31D00E3E2EA /* TransitionManager.swift in Sources */,
 				2D35B6391AE0B31D00E3E2EA /* DesignableTextField.swift in Sources */,
@@ -509,6 +622,7 @@
 		};
 		2D93F99A1ADD792000DF695B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EDCA2B7C01E0B43DB2BC6D2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WWDC15/Info.plist;
@@ -519,6 +633,7 @@
 		};
 		2D93F99B1ADD792000DF695B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D1B5216654E1305873CF8A7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WWDC15/Info.plist;

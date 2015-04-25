@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 @objc
 
@@ -24,7 +26,7 @@ class HomeViewController: UIViewController {
         
         
         
-        wwdcAnimationLabel.alpha = 0.0;
+//        wwdcAnimationLabel.alpha = 1.0;
         
         let glow:GlowLayer = GlowLayer(pulseColor: UIColor.blackColor())
         glow.radius = 90.0
@@ -46,6 +48,18 @@ class HomeViewController: UIViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
     
     return UIStatusBarStyle.LightContent
+    }
+    
+    @IBAction func transitionToNextController(sender:UIButton)
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc:mainBackgroundController = storyboard.instantiateViewControllerWithIdentifier("mainBackgroundVC") as! mainBackgroundController
+        
+        presentViewController(vc, animated: true) { () -> Void in
+            
+        }
+        
     }
     
 }
