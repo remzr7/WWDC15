@@ -21,5 +21,6 @@ class glyphCollectionViewCell: UICollectionViewCell
     required init(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
+        backgroundColor = UIColor.redColor()
     }
 }

@@ -53,6 +53,7 @@
 		2DDFC2571AE6658E00CB3ACA /* glyphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFC2561AE6658E00CB3ACA /* glyphCollectionViewCell.swift */; };
 		2DE78D0F1AE50069005C8AE3 /* bgEffect.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2DE78D0E1AE50069005C8AE3 /* bgEffect.mp4 */; };
 		2DEEB6C71AE8866E00F5FFA9 /* RZMagicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEB6C61AE8866E00F5FFA9 /* RZMagicLayout.swift */; };
+		2DEEB6CC1AEBAE6A00F5FFA9 /* RZMagicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEB6CB1AEBAE6A00F5FFA9 /* RZMagicCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		2DE78D0E1AE50069005C8AE3 /* bgEffect.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bgEffect.mp4; sourceTree = "<group>"; };
 		2DEEB6C61AE8866E00F5FFA9 /* RZMagicLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZMagicLayout.swift; sourceTree = "<group>"; };
 		2DEEB6CA1AE8EE8000F5FFA9 /* Experimental.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Experimental.playground; sourceTree = "<group>"; };
+		2DEEB6CB1AEBAE6A00F5FFA9 /* RZMagicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZMagicCollectionView.swift; sourceTree = "<group>"; };
 		3D1B5216654E1305873CF8A7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3EDCA2B7C01E0B43DB2BC6D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -301,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				2DEEB6C61AE8866E00F5FFA9 /* RZMagicLayout.swift */,
+				2DEEB6CB1AEBAE6A00F5FFA9 /* RZMagicCollectionView.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				2D35B6471AE0B31D00E3E2EA /* SpringLabel.swift in Sources */,
 				2D93F9821ADD792000DF695B /* ViewController.swift in Sources */,
 				2D9E68071AE3FFFA0047B34A /* mainBackgroundViewController.swift in Sources */,
+				2DEEB6CC1AEBAE6A00F5FFA9 /* RZMagicCollectionView.swift in Sources */,
 				2D35B6331AE0B31D00E3E2EA /* AutoTextView.swift in Sources */,
 				2D35B6441AE0B31D00E3E2EA /* SpringAnimation.swift in Sources */,
 				2D35B63C1AE0B31D00E3E2EA /* ImageLoader.swift in Sources */,

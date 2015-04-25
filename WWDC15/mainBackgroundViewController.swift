@@ -58,6 +58,8 @@ class mainBackgroundController: UIViewController, UICollectionViewDelegate, UICo
         
         var cell:glyphCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("glyph", forIndexPath: indexPath) as! glyphCollectionViewCell
         
+        cell.backgroundColor = UIColor.blueColor()
+        
         
         
         return cell as UICollectionViewCell
