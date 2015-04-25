@@ -14,23 +14,25 @@ class mainBackgroundController: UIViewController, UICollectionViewDelegate, UICo
 {
     
     @IBOutlet var storiesCollectionView: UICollectionView!
-  
-    var panGestureRecognizer:UIPanGestureRecognizer!
+    
+    var transition:MagicTransition
 
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        transition = MagicTransition()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setupInits()
     }
      required init(coder aDecoder: NSCoder) {
-        
+        transition = MagicTransition()
         super.init(coder:aDecoder)
         setupInits()
+        
      }
     
     func setupInits()
     {
-        panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "handleGesture")
+        
     }
     
     override func viewDidLoad()
@@ -62,9 +64,22 @@ class mainBackgroundController: UIViewController, UICollectionViewDelegate, UICo
         
         var cell:glyphCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("glyph", forIndexPath: indexPath) as! glyphCollectionViewCell
         
-//        cell.shadowImage.frame = cell.frame
+        cell.backgroundColor = UIColor.clearColor()
         
-        cell.backgroundColor = UIColor.blueColor()
+        switch (indexPath.item)
+        {
+        case 1:
+            cell.descLabel.text = "//the.hustler"
+            case 2:
+                cell.imageView.image = UIImage(named: "engineer")
+                cell.descLabel.text = "//the.engineer"
+            
+                break
+            default:
+                break
+        }
+        
+
         
         
         
@@ -75,11 +90,20 @@ class mainBackgroundController: UIViewController, UICollectionViewDelegate, UICo
         return 5;
     }
     
+    
+    
     //MARK: - Gesture Recognizer Methods
     
-    func handleGesture(sender:AnyObject)
-    {
-        
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        switch(indexPath.item)
+        {
+        case 5:
+            transition = MagicTransition(animatedView: collectionView.cellForItemAtIndexPath(indexPath)!)
+            break
+
+        default:
+            break
+        }
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -87,5 +111,17 @@ class mainBackgroundController: UIViewController, UICollectionViewDelegate, UICo
     }
     
 
+}
+
+extension mainBackgroundController: UIViewControllerTransitioningDelegate
+{
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return transition
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
+    }
 }
 

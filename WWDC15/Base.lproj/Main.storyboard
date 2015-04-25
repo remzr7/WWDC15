@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="oJv-Md-Ipj">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
@@ -49,37 +49,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="clV-2A-6sj" customClass="RZMagicCollectionView" customModule="WWDC15" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="81" width="320" height="423"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="448"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Idn-BZ-hrj" customClass="RZMagicLayout" customModule="WWDC15" customModuleProvider="target">
-                                    <size key="itemSize" width="289" height="155"/>
+                                    <size key="itemSize" width="289" height="175"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="glyph" id="Owb-ZL-LVj" customClass="glyphCollectionViewCell" customModule="WWDC15" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="0.0" width="289" height="155"/>
+                                        <rect key="frame" x="16" y="0.0" width="289" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="289" height="155"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="289" height="175"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="a2b-fs-0oU" userLabel="bgImage">
-                                                    <rect key="frame" x="0.0" y="0.0" width="289" height="155"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                </imageView>
-                                                <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgGradient" id="P7I-08-5t3" userLabel="gradient">
-                                                    <rect key="frame" x="0.0" y="0.0" width="289" height="155"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="//Life" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="szp-Au-iFy">
-                                                    <rect key="frame" x="82" y="96" width="125" height="33"/>
+                                                <view contentMode="scaleToFill" id="rKN-hI-xB9">
+                                                    <rect key="frame" x="-20" y="-20" width="329" height="195"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                    <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="a2b-fs-0oU" userLabel="bgImage">
+                                                            <rect key="frame" x="20" y="20" width="289" height="175"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgGradient" id="P7I-08-5t3" userLabel="gradient">
+                                                            <rect key="frame" x="20" y="20" width="289" height="175"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <color key="backgroundColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="//humanbeing" textAlignment="right" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.85000000000000031" id="szp-Au-iFy">
+                                                            <rect key="frame" x="47" y="139" width="248" height="36"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
+                                                            <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -87,6 +94,7 @@
                                         <connections>
                                             <outlet property="descLabel" destination="szp-Au-iFy" id="hiU-m5-Wqd"/>
                                             <outlet property="imageView" destination="a2b-fs-0oU" id="qag-O3-jMb"/>
+                                            <outlet property="scaleView" destination="rKN-hI-xB9" id="tXp-BC-QH8"/>
                                             <outlet property="shadowImage" destination="P7I-08-5t3" id="3n1-hi-hij"/>
                                         </connections>
                                     </collectionViewCell>
@@ -101,6 +109,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yba-WK-Nct" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="527" y="355"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7C6-ub-fkm">
+            <objects>
+                <viewController id="PkP-ut-yBt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U9q-aL-BU3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSj-h4-O4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="353"/>
         </scene>
     </scenes>
     <resources>

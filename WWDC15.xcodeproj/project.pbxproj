@@ -54,6 +54,9 @@
 		2DE78D0F1AE50069005C8AE3 /* bgEffect.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2DE78D0E1AE50069005C8AE3 /* bgEffect.mp4 */; };
 		2DEEB6C71AE8866E00F5FFA9 /* RZMagicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEB6C61AE8866E00F5FFA9 /* RZMagicLayout.swift */; };
 		2DEEB6CC1AEBAE6A00F5FFA9 /* RZMagicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEB6CB1AEBAE6A00F5FFA9 /* RZMagicCollectionView.swift */; };
+		2DEEB6CF1AEC1A2700F5FFA9 /* MagicTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEB6CE1AEC1A2700F5FFA9 /* MagicTransition.swift */; };
+		2DEEB6D11AEC34A700F5FFA9 /* RZStretchLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEB6D01AEC34A700F5FFA9 /* RZStretchLayout.swift */; };
+		2DEEB6D31AEC3A7100F5FFA9 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEB6D21AEC3A7100F5FFA9 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,9 @@
 		2DEEB6C61AE8866E00F5FFA9 /* RZMagicLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZMagicLayout.swift; sourceTree = "<group>"; };
 		2DEEB6CA1AE8EE8000F5FFA9 /* Experimental.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Experimental.playground; sourceTree = "<group>"; };
 		2DEEB6CB1AEBAE6A00F5FFA9 /* RZMagicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZMagicCollectionView.swift; sourceTree = "<group>"; };
+		2DEEB6CE1AEC1A2700F5FFA9 /* MagicTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicTransition.swift; sourceTree = "<group>"; };
+		2DEEB6D01AEC34A700F5FFA9 /* RZStretchLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZStretchLayout.swift; sourceTree = "<group>"; };
+		2DEEB6D21AEC3A7100F5FFA9 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		3D1B5216654E1305873CF8A7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3EDCA2B7C01E0B43DB2BC6D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,7 +264,7 @@
 				2D93F9811ADD792000DF695B /* ViewController.swift */,
 				2D93F9A81ADE7F6500DF695B /* GlowLayer.swift */,
 				2D35B64F1AE0B66600E3E2EA /* DynamicView.swift */,
-				2D9E68061AE3FFFA0047B34A /* mainBackgroundViewController.swift */,
+				2DEEB6CD1AEC19F200F5FFA9 /* ViewController */,
 				2DDFC2511AE6409300CB3ACA /* BackgroundHelper.swift */,
 				2DDFC2561AE6658E00CB3ACA /* glyphCollectionViewCell.swift */,
 				2DEEB6C51AE8864E00F5FFA9 /* Layouts */,
@@ -304,8 +310,19 @@
 			children = (
 				2DEEB6C61AE8866E00F5FFA9 /* RZMagicLayout.swift */,
 				2DEEB6CB1AEBAE6A00F5FFA9 /* RZMagicCollectionView.swift */,
+				2DEEB6D01AEC34A700F5FFA9 /* RZStretchLayout.swift */,
 			);
 			name = Layouts;
+			sourceTree = "<group>";
+		};
+		2DEEB6CD1AEC19F200F5FFA9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D9E68061AE3FFFA0047B34A /* mainBackgroundViewController.swift */,
+				2DEEB6CE1AEC1A2700F5FFA9 /* MagicTransition.swift */,
+				2DEEB6D21AEC3A7100F5FFA9 /* InfoViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		D7BD37747882A5FF9D3D97EC /* Frameworks */ = {
@@ -377,6 +394,7 @@
 				TargetAttributes = {
 					2D93F9791ADD792000DF695B = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 6HC28E8U42;
 					};
 					2D93F98E1ADD792000DF695B = {
 						CreatedOnToolsVersion = 6.3;
@@ -465,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEEB6D11AEC34A700F5FFA9 /* RZStretchLayout.swift in Sources */,
 				2D93F9A91ADE7F6500DF695B /* GlowLayer.swift in Sources */,
 				2D35B6341AE0B31D00E3E2EA /* BlurView.swift in Sources */,
 				2D35B63E1AE0B31D00E3E2EA /* KeyboardLayoutConstraint.swift in Sources */,
@@ -478,6 +497,7 @@
 				2DEEB6CC1AEBAE6A00F5FFA9 /* RZMagicCollectionView.swift in Sources */,
 				2D35B6331AE0B31D00E3E2EA /* AutoTextView.swift in Sources */,
 				2D35B6441AE0B31D00E3E2EA /* SpringAnimation.swift in Sources */,
+				2DEEB6D31AEC3A7100F5FFA9 /* InfoViewController.swift in Sources */,
 				2D35B63C1AE0B31D00E3E2EA /* ImageLoader.swift in Sources */,
 				2D35B6501AE0B66600E3E2EA /* DynamicView.swift in Sources */,
 				2D35B6481AE0B31D00E3E2EA /* SpringTextField.swift in Sources */,
@@ -491,6 +511,7 @@
 				2D35B64A1AE0B31D00E3E2EA /* SpringView.swift in Sources */,
 				2D93F9A21ADDF20200DF695B /* HomeViewController.swift in Sources */,
 				2D35B6321AE0B31D00E3E2EA /* AsyncImageView.swift in Sources */,
+				2DEEB6CF1AEC1A2700F5FFA9 /* MagicTransition.swift in Sources */,
 				2D35B6351AE0B31D00E3E2EA /* DesignableButton.swift in Sources */,
 				2D35B64C1AE0B31D00E3E2EA /* TransitionZoom.swift in Sources */,
 				2D35B6461AE0B31D00E3E2EA /* SpringImageView.swift in Sources */,
@@ -629,9 +650,12 @@
 			baseConfigurationReference = 3EDCA2B7C01E0B43DB2BC6D2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WWDC15/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -640,9 +664,12 @@
 			baseConfigurationReference = 3D1B5216654E1305873CF8A7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WWDC15/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

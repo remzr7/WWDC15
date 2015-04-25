@@ -10,6 +10,9 @@ import UIKit
 
 class glyphCollectionViewCell: UICollectionViewCell
 {
+    let miniumScale:CGFloat = 0.70;
+    @IBOutlet weak var scaleView: UIView!
+
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var descLabel: UILabel!
 
@@ -32,9 +35,22 @@ class glyphCollectionViewCell: UICollectionViewCell
     }
     
     override func layoutSubviews() {
-        backgroundColor = UIColor.redColor()
-//        shadowImage.frame = frame;
+
     }
     
     
+}
+
+extension glyphCollectionViewCell: RZMagicTransform
+{
+
+    override func prepareForReuse() {
+        super.prepareForReuse();
+        scaleView.transform = CGAffineTransformMakeScale(self.miniumScale, self.miniumScale);
+    }
+    
+    func transformCell(forScale scale: CGFloat) {
+        self.scaleView.transform = CGAffineTransformMakeScale(1.0 - scale, 1.0 - scale);
+    }
+
 }
