@@ -97,13 +97,28 @@ class mainBackgroundController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         switch(indexPath.item)
         {
-        case 5:
+        case 2:
+            
             transition = MagicTransition(animatedView: collectionView.cellForItemAtIndexPath(indexPath)!)
+            invokeTransitions()
+            
+            var infoVC:InfoViewController = storyboard?.instantiateViewControllerWithIdentifier("info") as! InfoViewController
+            infoVC.modalPresentationStyle = UIModalPresentationStyle.Custom
+            infoVC.transitioningDelegate = self
+            
+            self.presentViewController(infoVC, animated: true, completion: { () -> Void in
+                NSLog("succss")
+            })
             break
 
         default:
             break
         }
+    }
+    
+    func invokeTransitions(){
+        
+        
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

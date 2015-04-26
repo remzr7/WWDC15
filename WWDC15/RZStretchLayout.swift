@@ -14,6 +14,8 @@ class RZStretchLayout: UICollectionViewFlowLayout
         return true
     }
     
+    
+    
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject]? {
         
         var collectionView = self.collectionView
@@ -23,28 +25,40 @@ class RZStretchLayout: UICollectionViewFlowLayout
         var offset = collectionView!.contentOffset
         var minY = -insets.top
         
-        var attributes = super.layoutAttributesForElementsInRect(rect)
+        if let attributes = super.layoutAttributesForElementsInRect(rect){
+        
+        
         
         if (offset.y < minY)
         {
             var headerSize = self.headerReferenceSize
             var deltaY = fabsf(Float(offset.y - minY))
             
-            for attrs:UICollectionViewLayoutAttributes in attributes as! Array
-            {
-                if(attrs.representedElementKind == UICollectionElementKindSectionHeader)
+                for attrs in attributes
                 {
-                    var headRect = attrs.frame
-                    headRect.size.height = CGFloat(max(Float(minY), Float(headerSize.height) + Float(deltaY)))
-                    headRect.origin.y = CGFloat(Float(headRect.origin.y) - Float(deltaY))
-                    attrs.frame = headRect
-                    break;
+                    if(attrs.representedElementCategory != UICollectionElementCategory.Cell)
+//                    var elementKind = attrs.representedElementKind as String?
+//                        if elementKind? == UICollectionElementKindSectionHeader
+                    {
+                        var headRect = attrs.frame
+                        headRect.size.height = CGFloat(max(Float(minY), Float(headerSize.height) + Float(deltaY)))
+                        headRect.origin.y = CGFloat(Float(headRect.origin.y) - Float(deltaY))
+                        var z = attrs as! UICollectionViewLayoutAttributes
+                        z.frame = headRect
+                        break;
 
+                    }
+                    
                 }
-                
             }
-        }
         
         return attributes
+        }
+        else {return Array()}
+    
     }
+    
+    
+    
+    
 }

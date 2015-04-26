@@ -27,7 +27,7 @@ class BackgroundHelper: NSObject {
         
         player.actionAtItemEnd = AVPlayerActionAtItemEnd.None
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerItemDidEnd:", name: AVPlayerItemDidPlayToEndTimeNotification, object: player.currentItem)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("playerItemDidEnd:"), name: AVPlayerItemDidPlayToEndTimeNotification, object: player.currentItem)
         
         let playerLayer = AVPlayerLayer(player: player)
         
